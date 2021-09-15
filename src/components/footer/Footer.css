@@ -1,0 +1,116 @@
+.footer{
+    width: 100%;
+    background-color: rgb(29, 33, 53);
+    background-image: url('https://assets2.rappler.com/2020/08/1598264670-iwanttv-tfc-ls-644.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
+    
+}
+
+.footer__top{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(28, 29, 38);
+    border-bottom-right-radius: 100%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    margin-bottom: 20px;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.footer__links > p{
+    min-width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    margin: 10px 10px;
+}
+
+.footer__links > p:hover{
+    color: teal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer__apps > img{
+    margin: 10px 10px;
+}
+
+.footer__right{
+    background-color: rgb(28, 29, 38);
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.footer__right > p{
+    color: white;
+}
+
+.footer__social{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+.social:hover{
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+.social >.social__link{
+    font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .footer__right{
+        background-color: rgba(29, 33, 53, 0);
+        width: auto;
+        padding: 30px 30px;
+    }
+
+    .footer__container {
+        /* display: flex; */
+        justify-content: space-between;
+        /* flex-wrap: wrap;
+        align-items: center; */
+    }
+
+    .footer__apps {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        /* background-color: gray; */
+        margin-left:55px;
+    }
+}
